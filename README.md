@@ -45,3 +45,11 @@ El Pronk OxSim OX-1 permite simular principalmente variables asociadas a la puls
 La SpO₂ representa el porcentaje de hemoglobina oxigenada en sangre estimado mediante pulsioximetría. Clínicamente, es una variable fundamental para evaluar el estado de oxigenación del paciente.
 
 En el OxSim OX-1 se pueden simular valores como:
+
+| Modo | SpO₂ simulada | Interpretación |
+|---|---:|---|
+| Modo 1 | 85 % | Saturación baja o hipoxia simulada |
+| Modo 2 | 95 % | Saturación normal |
+| Modo 3 | 98 % | Saturación normal-alta |
+| Modo 4 | 98 % | Saturación normal con frecuencia elevada |
+| Modo 5 | 99 % | Saturación alta con baja perfusión |
