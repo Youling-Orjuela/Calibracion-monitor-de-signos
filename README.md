@@ -53,3 +53,14 @@ En el OxSim OX-1 se pueden simular valores como:
 | Modo 3 | 98 % | Saturación normal-alta |
 | Modo 4 | 98 % | Saturación normal con frecuencia elevada |
 | Modo 5 | 99 % | Saturación alta con baja perfusión |
+
+### Frecuencia cardíaca o frecuencia de pulso
+La frecuencia cardíaca o frecuencia de pulso corresponde al número de latidos o pulsaciones por minuto, expresado en bpm. En el contexto de esta práctica, el monitor recibe la señal desde el sensor de SpO₂, por lo que realmente se está evaluando la frecuencia de pulso derivada de la onda fotopletismográfica.
+
+El OxSim OX-1 permite simular valores como:
+
+| Valor simulado | Interpretación clínica            |
+| -------------: | --------------------------------- |
+|         40 bpm | Bradicardia                       |
+|         80 bpm | Frecuencia dentro de rango normal |
+|        140 bpm | Taquicardia                       |
