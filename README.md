@@ -38,3 +38,10 @@ Si también se utiliza ECG, se debe ingresar al área de ECG, abrir el menú ECG
 ### Paso 6. Confirmar lectura estable
 
 Antes de registrar los datos, se debe esperar a que los valores de SpO₂ y frecuencia de pulso se estabilicen. Esto evita tomar datos durante el periodo de transición inicial.
+## Parámetros o variables fisiológicas que pueden simularse con el Pronk OxSim OX-1
+El Pronk OxSim OX-1 permite simular principalmente variables asociadas a la pulsioximetría. De acuerdo con la información técnica del fabricante, el equipo posee modos de simulación con diferentes valores de saturación, frecuencia cardíaca y perfusión. Por ejemplo, puede simular 85 % de SpO₂ con 80 bpm, 95 % de SpO₂ con 40 bpm, 98 % de SpO₂ con 140 bpm y 99 % de SpO₂ con baja perfusión.
+
+### Saturación periférica de oxígeno, SpO₂
+La SpO₂ representa el porcentaje de hemoglobina oxigenada en sangre estimado mediante pulsioximetría. Clínicamente, es una variable fundamental para evaluar el estado de oxigenación del paciente.
+
+En el OxSim OX-1 se pueden simular valores como:
