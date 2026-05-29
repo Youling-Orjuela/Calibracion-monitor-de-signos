@@ -142,7 +142,7 @@ Con base en la revisión bibliográfica, se identificó que el monitor Mindray u
 
 
 ## Verificación funcional y evaluación de alarmas
-### Configuración inical
+### Configuración inicial
 Para iniciar la práctica, se encendió el monitor de signos vitales uMEC 100 y se configuró en modo “monitor”, permitiendo la visualización continua de las variables fisiológicas simuladas. Posteriormente, se conectó el sensor de pulsioximetría del monitor al simulador Pronk OxSim OX-1, verificando la correcta adquisición de señal y la estabilidad de la onda fotopletismográfica mostrada en pantalla.
 
 Una vez establecida la conexión entre ambos equipos, se realizaron diferentes configuraciones de frecuencia cardíaca y saturación periférica de oxígeno con el fin de evaluar el comportamiento funcional del monitor y la activación de alarmas fisiológicas bajo distintas condiciones simuladas.
@@ -150,7 +150,7 @@ Una vez establecida la conexión entre ambos equipos, se realizaron diferentes c
 <p align="center">
   <img src="https://i.postimg.cc/rm5bDNVK/oxsim.jpg" width="500">
 </p>
-### Simulación de condiciones fisiológicas y patológicas
+### Simulación de condiciones fisiológicas y patológicas:
 Inicialmente, el simulador fue configurado para representar un paciente bradicárdico con una frecuencia cardíaca de 40 bpm y una saturación de oxígeno del 95%. Los valores obtenidos en el monitor fueron comparados con los valores configurados en el OxSim para calcular el error absoluto y el error porcentual de cada variable.
 
 <p align="center">
@@ -178,7 +178,9 @@ Adicionalmente, se evaluó el comportamiento del monitor bajo condiciones de baj
 
 Para el registro de los resultados obtenidos, se clasificaron estos en una tabla en la cual se discriminaron los parámetros en Frecuencia Cardiaca y Saturación de Oxigeno para cada uno de los cuatro casos de prueba. Se registró adicionalmente valores de simulación, valores capturados, limites de alarma configurados, activación de alarmas y su respectivo tiempo de respuesta. Para el calculo de los errores, se utilizaron las siguientes formulas:
 
-E_{abs} = \left| x_{medido} - x_{real} \right|	
+$$
+E_{abs} = \left| x_{medido} - x_{real} \right|
+$$
 
 ### Resultados y comportamiento de las alarmas
 | Parámetro | Valor Simulado (OxSim-1) | Límite Alarma Configurado | Valor Leído | Error Absoluto | Error Porcentual [%] | Activación de Alarma | Tiempo de Respuesta [s] |
