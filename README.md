@@ -175,21 +175,54 @@ Adicionalmente, se evaluó el comportamiento del monitor bajo condiciones de baj
 <p align="center">
   <img src="https://i.postimg.cc/N0yJ2q8D/taquicardia.jpg" width="500">
 </p>
+
 ### Resultados y comportamiento de las alarmas
 
 ### Análisis de resultados
 • Análisis 1: Evalúe estadísticamente las diferencias entre los valores de
 energía de referencia y suministrados por el desfibrilador.
+Con el propósito de evaluar el desempeño funcional del monitor de signos vitales uMEC 100, se compararon los valores configurados en el simulador Pronk OxSim OX-1 con los valores registrados por el monitor para frecuencia cardíaca (HR) y saturación periférica de oxígeno (SpO₂). A partir de estas mediciones se calcularon el error absoluto y el error porcentual para cada condición simulada.
+
+Los resultados obtenidos mostraron diferencias pequeñas entre los valores de referencia y los valores medidos por el monitor, indicando una adecuada capacidad de detección y procesamiento de las señales fisiológicas simuladas. En las pruebas de bradicardia, taquicardia e hipoxemia, el monitor respondió correctamente y presentó errores dentro de rangos aceptables para una verificación funcional básica.
+
+Adicionalmente, se observó que las mayores variaciones ocurrieron durante la simulación en modo “Low Perfusion”, debido a la disminución en la amplitud y estabilidad de la señal fotopletismográfica. Esta condición dificulta la correcta estimación de la saturación de oxígeno, lo que puede incrementar la incertidumbre de medición y generar variaciones temporales en los valores visualizados por el monitor.
+
+En términos generales, el comportamiento del uMEC 100 evidenció una respuesta adecuada frente a cambios fisiológicos simulados, permitiendo verificar tanto la precisión de medición como la activación de alarmas configuradas para diferentes escenarios clínicos.
+
 • Análisis 2: Describa la relación entre la forma de onda que se visualiza en el
 D30 y la frecuencia cardíaca/saturación periférica de oxígeno.
 
+La onda fotopletismográfica visualizada en el uMEC 100 representa las variaciones del volumen sanguíneo detectadas por el sensor de pulsioximetría durante cada ciclo cardíaco. Por esta razón, existe una relación directa entre la forma de onda observada y la frecuencia cardíaca del paciente simulado.
+
+Cuando la frecuencia cardíaca aumentó durante la simulación de taquicardia, se observó una mayor cantidad de pulsos por unidad de tiempo, haciendo que la señal se visualizara más rápida y con intervalos menores entre picos consecutivos. Por el contrario, durante la simulación de bradicardia, los pulsos aparecieron más separados, reflejando una menor frecuencia de contracciones cardíacas.
+
+En relación con la saturación periférica de oxígeno, la SpO₂ no modifica directamente la frecuencia de la onda, pero sí puede afectar la calidad y estabilidad de la señal obtenida. Durante la condición de baja perfusión (“Low Perfusion”), la onda fotopletismográfica presentó menor amplitud y mayor distorsión, debido a la disminución del flujo sanguíneo detectable por el sensor. Esto demuestra que la calidad de la señal depende significativamente de la perfusión periférica y no únicamente de la concentración de oxígeno en sangre.
+
+Los resultados observados permitieron comprender cómo la señal fotopletismográfica constituye una representación indirecta de la dinámica cardiovascular y de la perfusión tisular del paciente.
+
 • Pregunta 1: ¿Cuál es el principio de operación del Pronk OxSim OX-1 para
 simular una onda pulsátil?
+El simulador Pronk OxSim OX-1 funciona mediante la generación controlada de señales ópticas que imitan el comportamiento de la absorción de luz producido por el flujo sanguíneo pulsátil en un tejido humano. Para ello, el dispositivo reproduce artificialmente las variaciones periódicas de absorción correspondientes a los pulsos arteriales detectados normalmente por un sensor de pulsioximetría.
+
+El OxSim utiliza patrones electrónicos y ópticos programados para simular diferentes condiciones fisiológicas, tales como variaciones en frecuencia cardíaca, saturación de oxígeno y estados de baja perfusión. De esta manera, el monitor interpreta la señal simulada como si proviniera de un paciente real, permitiendo verificar el funcionamiento del sistema de medición y alarmas sin necesidad de realizar pruebas clínicas directas.
+
 • Pregunta 2: ¿Por qué la SpO2 baja puede ser un falso positivo (falsa
 alarma) en una situación de mala perfusión?
+Las falsas alarmas de saturación baja pueden presentarse en situaciones de mala perfusión debido a que el sensor de pulsioximetría requiere una señal pulsátil suficientemente estable para calcular correctamente la SpO₂. Cuando el flujo sanguíneo periférico disminuye, la amplitud de la señal fotopletismográfica también disminuye, dificultando la detección precisa de los pulsos arteriales.
+
+En estas condiciones, el monitor puede interpretar ruido, interferencias o señales débiles como una reducción real de la saturación de oxígeno, generando alarmas incorrectas. Factores como hipotermia, vasoconstricción, movimiento del paciente o presión excesiva sobre el sensor también pueden contribuir a este fenómeno.
+
+Por esta razón, una lectura baja de SpO₂ siempre debe interpretarse considerando el contexto clínico y la calidad de la señal fotopletismográfica observada en el monitor.
 
 ### Conclusiones
 
+La práctica permitió evaluar el funcionamiento del monitor de signos vitales uMEC 100 mediante el uso del simulador de parámetros hemodinámicos Pronk OxSim OX-1, verificando su capacidad para medir variables fisiológicas como frecuencia cardíaca y saturación periférica de oxígeno bajo diferentes condiciones simuladas.
+
+Durante las pruebas realizadas, el monitor respondió adecuadamente ante eventos de bradicardia, taquicardia, hipoxemia y baja perfusión, activando las alarmas visuales y sonoras configuradas cuando los parámetros excedieron los límites establecidos. Esto evidenció un comportamiento funcional apropiado del sistema de monitoreo frente a condiciones fisiológicas y patológicas simuladas.
+
+Asimismo, se observó que la calidad de la señal fotopletismográfica depende significativamente del nivel de perfusión periférica. En condiciones de baja perfusión, la onda presentó distorsiones y menor estabilidad, lo que puede afectar la precisión de la medición y favorecer la aparición de falsas alarmas de SpO₂.
+
+Finalmente, la práctica permitió comprender la importancia de los simuladores biomédicos en los procesos de verificación técnica y validación funcional de equipos médicos, ya que facilitan la evaluación segura de alarmas, precisión de medición y comportamiento del monitor sin necesidad de realizar pruebas directas en pacientes.
 ## Referencias.
 
 [1] Universidad Militar Nueva Granada. Guía de preparación práctica de laboratorio: Simulación y Monitoreo de Variables Cardiovasculares y Hemodinámicas. Instrumentación Biomédica y Biosensores, 2025.
