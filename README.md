@@ -140,6 +140,56 @@ La FDA recomienda que, para obtener valores confiables de SpO₂ y frecuencia de
 
 Con base en la revisión bibliográfica, se identificó que el monitor Mindray uMEC 100 permite el monitoreo de variables fisiológicas como SpO₂, frecuencia de pulso y frecuencia cardíaca, mientras que el simulador Pronk OxSim OX-1 permite recrear condiciones específicas de pulsioximetría mediante valores controlados de saturación, frecuencia y perfusión. Para la práctica, los principales criterios de comparación son el error de SpO₂, con una tolerancia aproximada de ±2 % en adulto/pediátrico, y el error de frecuencia de pulso, con una tolerancia de ±3 bpm. La baja perfusión se evalúa principalmente a partir de la estabilidad de la lectura y la calidad de la onda fotopletismográfica.
 
+
+## Verificación funcional y evaluación de alarmas
+### Configuración inical
+Para iniciar la práctica, se encendió el monitor de signos vitales uMEC 100 y se configuró en modo “monitor”, permitiendo la visualización continua de las variables fisiológicas simuladas. Posteriormente, se conectó el sensor de pulsioximetría del monitor al simulador Pronk OxSim OX-1, verificando la correcta adquisición de señal y la estabilidad de la onda fotopletismográfica mostrada en pantalla.
+
+Una vez establecida la conexión entre ambos equipos, se realizaron diferentes configuraciones de frecuencia cardíaca y saturación periférica de oxígeno con el fin de evaluar el comportamiento funcional del monitor y la activación de alarmas fisiológicas bajo distintas condiciones simuladas.
+
+<p align="center">
+  <img src="https://i.postimg.cc/rm5bDNVK/oxsim.jpg" width="500">
+</p>
+### Simulación de condiciones fisiológicas y patológicas
+Inicialmente, el simulador fue configurado para representar un paciente bradicárdico con una frecuencia cardíaca de 40 bpm y una saturación de oxígeno del 95%. Los valores obtenidos en el monitor fueron comparados con los valores configurados en el OxSim para calcular el error absoluto y el error porcentual de cada variable.
+
+<p align="center">
+  <img src="https://i.postimg.cc/MKZZVdcq/40-95.jpg" width="500">
+</p>
+
+
+Posteriormente, se modificaron las condiciones fisiológicas simuladas con el propósito de evaluar la capacidad de respuesta del sistema de alarmas del uMEC 100. Para ello, se estableció un límite inferior de alarma de SpO2 del 90% y se ajustó el simulador a una configuración SpO2 del 85% y frecuencia cardíaca de 80 bpm. Después de cinco segundos, se verificó la activación de la alarma sonora y visual del monitor.
+
+<p align="center">
+  <img src="https://i.postimg.cc/q7pdH72S/alarma.jpg" width="45%" />
+  <img src="https://i.postimg.cc/NFq3bfGn/80-85.jpg" width="45%" />
+</p>
+
+Adicionalmente, se evaluó el comportamiento del monitor bajo condiciones de baja perfusión (“Low Perfusion”), configurando una saturación de oxígeno del 99% y observando posibles alteraciones en la morfología de la onda fotopletismográfica. Finalmente, se simuló una condición de taquicardia de 140 bpm con una SpO2 del 95%, permitiendo verificar la activación de alarmas asociadas a frecuencia cardíaca elevada.
+
+<p align="center">
+  <img src="https://i.postimg.cc/R0Qm8Hyz/alarma2.jpg" width="45%" />
+  <img src="https://i.postimg.cc/sgzsJmHp/lowperf.jpg" width="45%" />
+</p>
+
+<p align="center">
+  <img src="https://i.postimg.cc/N0yJ2q8D/taquicardia.jpg" width="500">
+</p>
+### Resultados y comportamiento de las alarmas
+
+### Análisis de resultados
+• Análisis 1: Evalúe estadísticamente las diferencias entre los valores de
+energía de referencia y suministrados por el desfibrilador.
+• Análisis 2: Describa la relación entre la forma de onda que se visualiza en el
+D30 y la frecuencia cardíaca/saturación periférica de oxígeno.
+
+• Pregunta 1: ¿Cuál es el principio de operación del Pronk OxSim OX-1 para
+simular una onda pulsátil?
+• Pregunta 2: ¿Por qué la SpO2 baja puede ser un falso positivo (falsa
+alarma) en una situación de mala perfusión?
+
+### Conclusiones
+
 ## Referencias.
 
 [1] Universidad Militar Nueva Granada. Guía de preparación práctica de laboratorio: Simulación y Monitoreo de Variables Cardiovasculares y Hemodinámicas. Instrumentación Biomédica y Biosensores, 2025.
