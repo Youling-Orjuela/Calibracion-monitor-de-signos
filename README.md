@@ -187,7 +187,7 @@ $$
 Error Porcentual:
 
 $$
-E_{\%} = \frac{E_{abs}}{Valor_{simulado}} \times 100
+E_{\%} = \frac{E_{abs}}{Valor_{simulado}} 
 $$
 
 ### Resultados y comportamiento de las alarmas
