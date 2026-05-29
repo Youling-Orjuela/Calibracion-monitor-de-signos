@@ -176,6 +176,10 @@ Adicionalmente, se evaluó el comportamiento del monitor bajo condiciones de baj
   <img src="https://i.postimg.cc/N0yJ2q8D/taquicardia.jpg" width="500">
 </p>
 
+Para el registro de los resultados obtenidos, se clasificaron estos en una tabla en la cual se discriminaron los parámetros en Frecuencia Cardiaca y Saturación de Oxigeno para cada uno de los cuatro casos de prueba. Se registró adicionalmente valores de simulación, valores capturados, limites de alarma configurados, activación de alarmas y su respectivo tiempo de respuesta. Para el calculo de los errores, se utilizaron las siguientes formulas:
+
+E_{abs} = \left| x_{medido} - x_{real} \right|	
+
 ### Resultados y comportamiento de las alarmas
 | Parámetro | Valor Simulado (OxSim-1) | Límite Alarma Configurado | Valor Leído | Error Absoluto | Error Porcentual [%] | Activación de Alarma | Tiempo de Respuesta [s] |
 |---|---|---|---|---|---|---|---|
