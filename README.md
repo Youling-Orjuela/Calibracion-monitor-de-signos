@@ -177,7 +177,16 @@ Adicionalmente, se evaluó el comportamiento del monitor bajo condiciones de baj
 </p>
 
 ### Resultados y comportamiento de las alarmas
-
+| Parámetro | Valor Simulado (OxSim-1) | Límite Alarma Configurado | Valor Leído | Error Absoluto | Error Porcentual [%] | Activación de Alarma | Tiempo de Respuesta [s] |
+|---|---|---|---|---|---|---|---|
+| FC [bpm] | 40 | Sin configurar | 40 | 0 | 0 | No | 0 |
+| SpO₂ [%] | 95 | Sin configurar | 95 | 0 | 0 | No | 0 |
+| FC [bpm] | 80 | Sin configurar | 80 | 0 | 0 | No | 0 |
+| SpO₂ [%] | 85 | Lím inferior: 90% | 85 | 0 | 0 | No | 0 |
+| FC [bpm] | 80 | Sin configurar | 80 | 0 | 0 | No | 0 |
+| SpO₂ [%] | 99 | Lím superior: 97% | 100 | 1 | 1,01010101 | Sí | 5 |
+| FC [bpm] | 140 | Lím superior FC: 140 | 140 | 0 | 0 | Sí | 5 |
+| SpO₂ [%] | 95 | Lím superior: 97%, Lím inferior: 90% | 98 | 3 | 3,157894737 | Sí | 5 |
 ### Análisis de resultados
 • Análisis 1: Evalúe estadísticamente las diferencias entre los valores de
 energía de referencia y suministrados por el desfibrilador.
