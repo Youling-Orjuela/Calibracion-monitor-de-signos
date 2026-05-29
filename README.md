@@ -183,7 +183,7 @@ Error Absoluto: $E_{abs} = \left| x_{medido} - x_{real} \right|$
 Error Porcentual:
 
 $$
-Error_{\%} = \frac{Error_{abs}}{Valor_{simulado}} \times 100
+E_{%} = \frac{Error_{abs}}{Valor_{simulado}} \times 100
 $$
 
 ### Resultados y comportamiento de las alarmas
