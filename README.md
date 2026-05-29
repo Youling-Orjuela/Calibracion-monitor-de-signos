@@ -1,4 +1,4 @@
-# Calibracion-monitor-de-signos
+# Práctica de Laboratorio 6: Calibración del Monitor de Signos Vitales 
 ## Monitor de signos vitales Mindray uMEC 100
 El uMEC 100 es un monitor multiparámetro utilizado para el seguimiento clínico de variables fisiológicas. De acuerdo con la hoja técnica de la serie uMEC 100/120/150, este equipo puede mostrar hasta 8 canales de forma de onda en el modelo uMEC 100 y permite el monitoreo de parámetros como ECG, frecuencia cardíaca, SpO₂, frecuencia de pulso, respiración, temperatura y presión arterial no invasiva, dependiendo de la configuración del equipo [2].
 
@@ -176,7 +176,7 @@ Adicionalmente, se evaluó el comportamiento del monitor bajo condiciones de baj
   <img src="https://i.postimg.cc/N0yJ2q8D/taquicardia.jpg" width="500">
 </p>
 
-Para el registro de los resultados obtenidos, se clasificaron estos en una tabla en la cual se discriminaron los parámetros en Frecuencia Cardiaca y Saturación de Oxigeno para cada uno de los cuatro casos de prueba. Se registró adicionalmente valores de simulación, valores capturados, limites de alarma configurados, activación de alarmas y su respectivo tiempo de respuesta. Para el calculo de los errores (error absoluto y error porcentual), se utilizaron las siguientes formulas:
+Para el registro de los resultados obtenidos, se clasificaron estos en una tabla en la cual se discriminaron los parámetros en frecuencia cardíaca y saturación de oxígeno para cada uno de los cuatro casos de prueba. Se registró adicionalmente valores de simulación, valores capturados, límites de alarma configurados, activación de alarmas y su respectivo tiempo de respuesta. Para el cálculo de los errores (error absoluto y error porcentual), se utilizaron las siguientes fórmulas:
 
 Error Absoluto: $E_{abs} = \left| x_{medido} - x_{real} \right|$
 
