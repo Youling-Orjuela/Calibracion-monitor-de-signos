@@ -1,16 +1,16 @@
 # Calibracion-monitor-de-signos
 ## Monitor de signos vitales Mindray uMEC 100
-El uMEC 100 es un monitor multiparámetro utilizado para el seguimiento clínico de variables fisiológicas. De acuerdo con la hoja técnica de la serie uMEC 100/120/150, este equipo puede mostrar hasta 8 canales de forma de onda en el modelo uMEC 100 y permite el monitoreo de parámetros como ECG, frecuencia cardíaca, SpO₂, frecuencia de pulso, respiración, temperatura y presión arterial no invasiva, dependiendo de la configuración del equipo.
+El uMEC 100 es un monitor multiparámetro utilizado para el seguimiento clínico de variables fisiológicas. De acuerdo con la hoja técnica de la serie uMEC 100/120/150, este equipo puede mostrar hasta 8 canales de forma de onda en el modelo uMEC 100 y permite el monitoreo de parámetros como ECG, frecuencia cardíaca, SpO₂, frecuencia de pulso, respiración, temperatura y presión arterial no invasiva, dependiendo de la configuración del equipo [2].
 
 En esta práctica, el parámetro principal de trabajo es la pulsioximetría, ya que se utiliza el sensor de SpO₂ conectado al simulador OxSim OX-1.
 
 ## Simulador Pronk OxSim OX-1
-El Pronk OxSim OX-1 es un simulador óptico de pulsioximetría diseñado para probar sistemas completos de SpO₂, incluyendo el monitor, el cable de extensión y el sensor. El fabricante indica que el equipo funciona con dos botones, utiliza una batería AA y detecta automáticamente el tipo de sensor, evitando seleccionar manualmente el fabricante del oxímetro bajo prueba.
+El Pronk OxSim OX-1 es un simulador óptico de pulsioximetría diseñado para probar sistemas completos de SpO₂, incluyendo el monitor, el cable de extensión y el sensor. El fabricante indica que el equipo funciona con dos botones, utiliza una batería AA y detecta automáticamente el tipo de sensor, evitando seleccionar manualmente el fabricante del oxímetro bajo prueba [4].
 
 El OxSim OX-1 permite simular diferentes combinaciones de SpO₂, frecuencia cardíaca o frecuencia de pulso y perfusión, lo que lo hace útil para evaluar si el monitor responde correctamente ante condiciones normales o alteradas.
 
 ### ¿Cómo colocar el uMEC 100 en modo “monitor”?
-Para colocar el uMEC 100 en modo monitor se debe tener en cuenta que, en los monitores Mindray, el modo monitor está asociado a una configuración de visualización y filtrado adecuada para el monitoreo continuo del paciente. En el manual de operación de la serie uMEC se indica que, para modificar la configuración de ECG, se debe seleccionar la ventana del parámetro ECG o el área de la forma de onda para acceder al menú ECG Setup. Dentro de este menú, el filtro Monitor se recomienda para condiciones normales de medición.
+Para colocar el uMEC 100 en modo monitor se debe tener en cuenta que, en los monitores Mindray, el modo monitor está asociado a una configuración de visualización y filtrado adecuada para el monitoreo continuo del paciente. En el manual de operación de la serie uMEC se indica que, para modificar la configuración de ECG, se debe seleccionar la ventana del parámetro ECG o el área de la forma de onda para acceder al menú ECG Setup. Dentro de este menú, el filtro Monitor se recomienda para condiciones normales de medición [3].
 
 Para la práctica de pulsioximetría, el procedimiento puede organizarse así:
 
@@ -79,7 +79,7 @@ Aunque el OxSim no simula directamente una enfermedad como tal, genera una seña
 Cuando la frecuencia cardíaca aumenta, los picos de la onda aparecen más cercanos entre sí. Cuando la frecuencia disminuye, los picos se separan. En baja perfusión, la amplitud de la onda puede disminuir o verse menos estable.
 
 ## Tolerancias o errores máximos permitidos, EMP
-Para definir los errores máximos permitidos se tomaron como referencia las especificaciones del monitor uMEC y las normas aplicables a equipos de pulsioximetría. La serie uMEC declara cumplimiento con la norma ISO 80601-2-61 para SpO₂. Esta norma aplica a la seguridad básica y desempeño esencial de equipos de pulsioximetría, incluyendo monitor, sensor y extensiones del sensor.
+Para definir los errores máximos permitidos se tomaron como referencia las especificaciones del monitor uMEC y las normas aplicables a equipos de pulsioximetría. La serie uMEC declara cumplimiento con la norma ISO 80601-2-61 para SpO₂. Esta norma aplica a la seguridad básica y desempeño esencial de equipos de pulsioximetría, incluyendo monitor, sensor y extensiones del sensor [5].
 
 En esta práctica, los EMP más importantes son los de SpO₂ y frecuencia de pulso, porque son las variables simuladas con el OxSim OX-1.
 
@@ -127,7 +127,7 @@ Para la baja perfusión, más que calcular un error porcentual, se recomienda ev
 -si se genera una falsa alarma;
 -si el monitor tarda más en estabilizar la medición.
 
-La FDA recomienda que, para obtener valores confiables de SpO₂ y frecuencia de pulso, se consideren condiciones de señal inadecuada, como baja intensidad de señal o lecturas inestables.
+La FDA recomienda que, para obtener valores confiables de SpO₂ y frecuencia de pulso, se consideren condiciones de señal inadecuada, como baja intensidad de señal o lecturas inestables [6].
 
 ## Tabla resumen de variables simuladas y EMP
 | Variable simulada           | Equipo que la simula                    | Equipo que la mide         | Rango o modos usados en práctica | EMP recomendado                                  |
