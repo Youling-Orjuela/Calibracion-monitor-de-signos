@@ -150,13 +150,13 @@ Una vez establecida la conexión entre ambos equipos, se realizaron diferentes c
 <p align="center">
   <img src="https://i.postimg.cc/rm5bDNVK/oxsim.jpg" width="500">
 </p>
-### Simulación de condiciones fisiológicas y patológicas:
+
+### Simulación de condiciones fisiológicas y patológicas
 Inicialmente, el simulador fue configurado para representar un paciente bradicárdico con una frecuencia cardíaca de 40 bpm y una saturación de oxígeno del 95%. Los valores obtenidos en el monitor fueron comparados con los valores configurados en el OxSim para calcular el error absoluto y el error porcentual de cada variable.
 
 <p align="center">
   <img src="https://i.postimg.cc/MKZZVdcq/40-95.jpg" width="500">
 </p>
-
 
 Posteriormente, se modificaron las condiciones fisiológicas simuladas con el propósito de evaluar la capacidad de respuesta del sistema de alarmas del uMEC 100. Para ello, se estableció un límite inferior de alarma de SpO2 del 90% y se ajustó el simulador a una configuración SpO2 del 85% y frecuencia cardíaca de 80 bpm. Después de cinco segundos, se verificó la activación de la alarma sonora y visual del monitor.
 
@@ -179,7 +179,7 @@ Adicionalmente, se evaluó el comportamiento del monitor bajo condiciones de baj
 Para el registro de los resultados obtenidos, se clasificaron estos en una tabla en la cual se discriminaron los parámetros en Frecuencia Cardiaca y Saturación de Oxigeno para cada uno de los cuatro casos de prueba. Se registró adicionalmente valores de simulación, valores capturados, limites de alarma configurados, activación de alarmas y su respectivo tiempo de respuesta. Para el calculo de los errores, se utilizaron las siguientes formulas:
 
 $$
-E_{abs} = \left| x_{medido} - x_{real} \right|
+E_{abs} = \left| Valor_{medido} - Valor_{simulado} \right|
 $$
 
 ### Resultados y comportamiento de las alarmas
