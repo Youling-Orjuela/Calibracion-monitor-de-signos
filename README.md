@@ -180,11 +180,7 @@ Para el registro de los resultados obtenidos, se clasificaron estos en una tabla
 
 Error Absoluto: $E_{abs} = \left| x_{medido} - x_{real} \right|$
 
-Error Porcentual:
-
-$$
-E_{%} = \frac{Error_{abs}}{Valor_{simulado}} \times 100
-$$
+Error Porcentual: $E_{porcentual} = \frac{Error_{abs}}{Valor_{simulado}}*100$
 
 ### Resultados y comportamiento de las alarmas
 | Parámetro | Valor Simulado (OxSim-1) | Límite Alarma Configurado | Valor Leído | Error Absoluto | Error Porcentual [%] | Activación de Alarma | Tiempo de Respuesta [s] |
