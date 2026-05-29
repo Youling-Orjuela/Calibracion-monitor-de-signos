@@ -187,7 +187,7 @@ $$
 Error Porcentual:
 
 $$
-E_{\%} = \left( \frac{\left| x_{medido} - x_{real} \right|}{x_{real}} \right) \times 100
+E_{\%} = \frac{|x_{medido} - x_{real}|}{x_{real}} \times 100
 $$
 
 ### Resultados y comportamiento de las alarmas
